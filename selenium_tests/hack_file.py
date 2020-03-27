@@ -5,8 +5,6 @@ from selenium.webdriver.common.keys import Keys
 
 short_password_error_text = "Sorry, that password is too short. It needs to be eight characters or more."
 
-
-
 # driver management
 driver = webdriver.Chrome("../web_drivers/chromedriver")
 driver.implicitly_wait(3)
