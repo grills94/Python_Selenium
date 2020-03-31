@@ -44,7 +44,7 @@ So, to reduce deployment time it makes sense to only install packages needed to 
 ```python
 from selenium import webdriver
 
-driver = webdriver.Chrome("../web_drivers/chromedriver")
+driver = webdriver.Chrome("../drivers/chromedriver")
 
 driver.get("https://www.bbc.co.uk/")
 ```
