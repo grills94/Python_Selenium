@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-from selenium import webdriver
 
 class BbcHomePage:
 
@@ -15,4 +14,3 @@ class BbcHomePage:
 
     def click_sign_in_link(self):
         self.driver.find_element(*self.SIGN_IN_LINK).click()
-
