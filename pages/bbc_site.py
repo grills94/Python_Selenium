@@ -1,5 +1,5 @@
-from pages.bbc_home_page import BbcHomePage
-from pages.bbc_login_page import BbcLoginPage
+from pages.page_objects.bbc_home_page import BbcHomePage
+from pages.page_objects.bbc_login_page import BbcLoginPage
 
 class BbcSite:
 
