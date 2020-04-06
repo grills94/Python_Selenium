@@ -11,6 +11,7 @@ def browser():
     yield BBC_SITE
     driver.close()
 
+
 def test_go_to_home_page(browser):
     browser.bbc_home_page().go_to_home_page()
     assert browser.driver.current_url == browser.bbc_home_page().BBC_HOME_PAGE_URL
@@ -25,4 +26,4 @@ def test_click_on_sign_in_link(browser):
 
 def test_password_field_exists(browser):
     browser.bbc_sign_in_page().go_to_login_page()
-    browser.bbc_sign_in_page().input_username("test@gmail.com")
+    assert browser.bbc_sign_in_page().find_password_field() == True
