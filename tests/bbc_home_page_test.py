@@ -11,6 +11,7 @@ def browser():
     yield BBC_SITE
     driver.close()
 
+
 def test_go_to_home_page(browser):
     browser.bbc_home_page().go_to_home_page()
     assert browser.driver.current_url == browser.bbc_home_page().BBC_HOME_PAGE_URL
