@@ -2,5 +2,7 @@
 .idea
 tests/__pycache__/
 pages/__pycache__
+pages/page_objects/__pycache__
+
 
 
